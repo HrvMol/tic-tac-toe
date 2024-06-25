@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 function Navbar(props) {
   const [toggle, setToggle] = useState(false)
   return (
-    <nav className='w-full flex flex-row py-2 px-10 justify-between items-center dark:bg-custom-black bg-custom-white fixed navbar'>
-      <Link to='/home' className='font-karla font-normal text-[24px] dark:text-custom-white text-custom-black uppercase'>Tic-Tac-Toe</Link>
+    <nav className='w-full flex flex-row py-2 px-10 justify-between items-center bg-custom-white fixed navbar'>
+      <Link to='/home' className='font-karla font-normal text-[24px] text-custom-black uppercase'>Tic-Tac-Toe</Link>
 
       {/* Desktop view */}
       <ul className='list-none sm:flex hidden justify-end flex-1 items-center'>
@@ -36,7 +36,7 @@ function Navbar(props) {
 function NavItem({to, text}) {
   return (
     <li>
-      <Link to={ to } className='font-karla font-normal text-[24px] dark:text-custom-white text-custom-black uppercase leading-none sm:mr-10 mt-10'>
+      <Link to={ to } className='font-karla font-normal text-[24px] text-custom-black uppercase leading-none sm:mr-10 mt-10'>
         { text }
       </Link>
     </li>
